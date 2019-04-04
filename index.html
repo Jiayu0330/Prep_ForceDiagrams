@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Force Diagrams</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="title">
+      Data Sets of Force Diagrams
+    </div>
+    <ul>
+      <li>Family-Tree: The relationships between family members</li>
+        <p>var dataset = { <br>
+            nodes: [
+                { name: "Grandfather" },
+                { name: "Grandmother" },
+                { name: "Uncle" },
+                { name: "Aunt" },
+                { name: "Cousin" },
+                { name: "Mother" },
+                { name: "Father" },
+                { name: "Brother" },
+                { name: "You" }, <br>
+            ],<br>
+            edges: [
+                { source: 0, target: 1 },
+                { source: 0, target: 3 },
+                { source: 0, target: 5 },
+                { source: 1, target: 3 },
+                { source: 1, target: 5 },
+                { source: 2, target: 3 },
+                { source: 2, target: 4 },
+                { source: 3, target: 4 },
+                { source: 5, target: 6 },
+                { source: 5, target: 7 },
+                { source: 5, target: 8 },
+                { source: 6, target: 7 },
+                { source: 6, target: 8 },
+                { source: 7, target: 8 }, <br>
+            ]
+          };</p>
+          <img src="family-tree.PNG" alt="family-tree"  width="506" height="280" />
+      <li>Border States: Some of the border states of America</li>
+      <p>var dataset = { <br>
+          nodes: [
+              { name: "Florida" },
+              { name: "Georgia" },
+              { name: "Alabama" },
+              { name: "South Carolina" },
+              { name: "Mississippi" },
+              { name: "North Carolina" },
+              { name: "Tennessee" },
+              { name: "Kentucky" },
+              { name: "Virginia" }, <br>
+          ],<br>
+          edges: [
+              { source: 0, target: 1 },
+              { source: 0, target: 2 },
+              { source: 0, target: 3 },
+              { source: 1, target: 2 },
+              { source: 1, target: 3 },
+              { source: 1, target: 5 },
+              { source: 1, target: 6 },
+              { source: 2, target: 4 },
+              { source: 2, target: 6 },
+              { source: 3, target: 5 },
+              { source: 4, target: 6 },
+              { source: 5, target: 6 },
+              { source: 5, target: 8 },
+              { source: 6, target: 7 },
+              { source: 6, target: 8 },
+              { source: 7, target: 8 }, <br>
+          ]
+        };</p>
+        <img src="states.PNG" alt="states" width="506" height="400" />
+      <li>Match: Match girls with boys</li>
+      <p>var dataset = { <br>
+          nodes: [
+              { name: "Mary" },
+              { name: "Bob" },
+              { name: "Emily" },
+              { name: "Robert" },
+              { name: "Cindy" },
+              { name: "Tom" }, <br>
+          ],<br>
+          edges: [
+              { source: 0, target: 1 },
+              { source: 2, target: 3 },
+              { source: 4, target: 5 }, <br>
+          ]
+        };</p>
+    </ul>
+  </body>
+</html>
